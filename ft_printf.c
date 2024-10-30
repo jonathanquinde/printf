@@ -12,9 +12,9 @@ int ft_printf(char  *str, ...)
         if (str[i] == '%') 
         {
             if (str[1] == 'c')
-                // 
+                char_handler(va_arg(arguments, char));
             else if (str[1] == 's')
-                //
+                str_handler(va_arg(arguments, char *));
             else if (str[1] == 'i')
                 //
             else if (str[1] == 'u')
