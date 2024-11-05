@@ -17,6 +17,7 @@ int ft_printf(char  *str, ...)
             write(1, &str[i], 1);
         i++;
     }
+    va_end(arguments);
     return (sum);
 }
 
