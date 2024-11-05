@@ -17,7 +17,7 @@ int ft_printf(char  *str, ...)
             write(1, &str[i], 1);
         i++;
     }
-    return (i);
+    return (sum);
 }
 
 int conversion_specifiers(char  word, va_list arguments)
