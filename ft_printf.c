@@ -29,7 +29,7 @@ int conversion_specifiers(char  word, va_list arguments)
         sum += put_char(va_arg(arguments, char));
     else if (word == 's')
         sum += put_str(va_arg(arguments, char *));
-    else if (word = 'i')
+    else if (word == 'i')
         //
     else if (word == 'u')
         //
