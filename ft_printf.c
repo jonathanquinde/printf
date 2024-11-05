@@ -11,8 +11,8 @@ int ft_printf(char  *str, ...)
     i = 0;
     while (str[i])
     {
-        if (str[i++] == '%') 
-            sum += conversion_specifiers(str[1], arguments);
+        if (str[i] == '%') 
+            sum += conversion_specifiers(str[++i], arguments);
         else
             write(1, &str[i], 1);
         i++;
