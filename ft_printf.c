@@ -33,7 +33,7 @@ int conversion_specifiers(char  word, va_list arguments)
     else if (word == 's')
         sum += put_str(va_arg(arguments, char *));
     else if (word == 'i' || word == 'd')
-        ;
+        sum += handle_negative(va_arg(arguments, int));
     else if (word == 'u')
         sum += put_nbr_base(va_arg(arguments, unsigned int), "0123456789", 10);
     else if (word == 'p')
