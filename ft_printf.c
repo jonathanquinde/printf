@@ -54,5 +54,26 @@ int main(void)
 
     p_result = printf("hola\n");
     u_result = ft_printf("hola\n");
-    printf("Printf: %d, ft_printf: %d", p_result, u_result);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+
+    p_result = printf("%u\n", 0);
+    u_result = ft_printf("%u\n", 0);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+
+    p_result = printf("%u\n", 1);
+    u_result = ft_printf("%u\n", 1);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+
+    p_result = printf("%u\n", -1);
+    u_result = ft_printf("%u\n", -1);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+/*
+    p_result = printf("%u\n", 4294967294);
+    u_result = ft_printf("%u\n", 4294967295);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+
+    //p_result = printf("%i\n", 4294967296);
+    u_result = ft_printf("%i\n", 4294967296);
+    printf("Printf: %d, ft_printf: %d\n", p_result, u_result);
+*/
 }
