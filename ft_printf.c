@@ -32,16 +32,16 @@ int conversion_specifiers(char  word, va_list arguments)
         sum += put_char(va_arg(arguments, int));
     else if (word == 's')
         sum += put_str(va_arg(arguments, char *));
-    else if (word == 'i')
+    else if (word == 'i' || word == 'd')
         ;
     else if (word == 'u')
         sum += put_nbr_base(va_arg(arguments, unsigned int), "0123456789", 10);
     else if (word == 'p')
         sum += put_pointer_adress(va_arg(arguments, void *));
     else if (word == 'x')
-        ;
+        sum += put_nbr_base(va_arg(arguments, unsigned int), "0123456789abcdef", 16);
     else if (word == 'X')
-        ;
+        sum += put_nbr_base(va_arg(arguments, unsigned int), "0123456789ABCDEF", 16);
     else if (word == '%')
         sum += write(1, "%%", 1);
     return (sum);
