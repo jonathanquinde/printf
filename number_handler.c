@@ -29,10 +29,10 @@ int put_pointer_adress(void *ptr)
 {
     int sum;
 
-    if (ptr = NULL)
+    if (ptr == NULL)
         return (write(1, "(nil)", 5));
     sum = 0;
     sum += write(1, "0x", 2);
-    sum += put_nbr_base(ptr, "0123456789abcdef", 16);
+    sum += put_nbr_base((size_t) ptr, "0123456789abcdef", 16);
     return (sum);
 }
