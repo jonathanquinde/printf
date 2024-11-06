@@ -2,7 +2,7 @@
 
 int put_char(char c)
 {
-    retur(write(1, &c, 1));
+    return(write(1, &c, 1));
 }
 
 int put_str(char *str)
