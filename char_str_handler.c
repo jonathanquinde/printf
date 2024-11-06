@@ -7,12 +7,12 @@ int put_char(char c)
 
 int put_str(char *str)
 {
-    int i;
+    int sum;
 
     if (str == NULL)
         return (write(1, "(null)", 6));
-    i = 0;
+    sum = 0;
     while (*str)
-        i += write(1, str, 1);
-    return (i);
+        sum += write(1, str++, 1);
+    return (sum);
 }
