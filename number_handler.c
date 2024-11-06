@@ -36,3 +36,17 @@ int put_pointer_adress(void *ptr)
     sum += put_nbr_base((unsigned int) ptr, "0123456789abcdef", 16);
     return (sum);
 }
+
+int handle_negative(int num)
+{
+    int sum;
+
+    if (num >= 0)
+        put_nbr_base(num, "0123456789", 10);
+    if (num == -2147483648)
+        return (put_str("-2147483648"));
+    sum = 0;
+    sum += put_char('-');
+    sum += put_nbr_base(-num, "0123456789", 10);
+    return (sum);
+}
