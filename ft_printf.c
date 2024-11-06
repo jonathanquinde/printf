@@ -33,9 +33,9 @@ int conversion_specifiers(char  word, va_list arguments)
     else if (word == 'i')
         //
     else if (word == 'u')
-        //
+        sum += put_nbr_base(va_arg(arguments, unsigned int), "0123456789", 10);
     else if (word == 'p')
-        //
+        sum += put_pointer_adress(va_arg(arguments, void *));
     else if (word == 'x')
         //
     else if (word == 'X')
@@ -43,4 +43,16 @@ int conversion_specifiers(char  word, va_list arguments)
     else if (word == '%')
         sum += write(1, "%%", 1);
     return (sum);
+}
+
+int main(void)
+{
+    int i;
+
+    i = -1;
+    printf("%i", i);
+    i = -1;
+    printf("%i", i);
+    i = -1;
+    printf("%i", i);
 }
