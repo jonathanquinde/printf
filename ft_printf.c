@@ -16,7 +16,7 @@ int ft_printf(char  *str, ...)
         if (str[i] == '%') 
             sum += conversion_specifiers(str[++i], arguments);
         else
-            write(1, &str[i], 1);
+            sum += write(1, &str[i], 1);
         i++;
     }
     va_end(arguments);
