@@ -12,7 +12,7 @@
 
 #include "printf.h"
 
-int put_nbr_base(size_t num, char *base, size_t len)
+int put_nbr_base(unsigned int num, char *base, size_t len)
 {
     int  sum;
 
@@ -33,6 +33,6 @@ int put_pointer_adress(void *ptr)
         return (write(1, "(nil)", 5));
     sum = 0;
     sum += write(1, "0x", 2);
-    sum += put_nbr_base((size_t) ptr, "0123456789abcdef", 16);
+    sum += put_nbr_base((unsigned int) ptr, "0123456789abcdef", 16);
     return (sum);
 }
