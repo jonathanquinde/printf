@@ -6,13 +6,13 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:02:15 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/07 17:49:10 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/07 18:01:00 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	put_nbr_base(unsigned int num, char *base, size_t len)
+int	put_nbr_base(unsigned long num, char *base, size_t len)
 {
 	int	sum;
 

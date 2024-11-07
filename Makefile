@@ -8,11 +8,10 @@ CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)  
-	@echo "Library $(NAME) created successfully!"
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+%.o: %.c printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
