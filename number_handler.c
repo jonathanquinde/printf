@@ -6,7 +6,7 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:02:15 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/08 12:23:20 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:42:31 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	handle_negative(int num)
 	int	sum;
 
 	if (num >= 0)
-		put_nbr_base(num, BASE_DEC, 10);
+		return (put_nbr_base(num, BASE_DEC, 10));
 	if (num == -2147483648)
 		return (put_str("-2147483648"));
 	sum = 0;
