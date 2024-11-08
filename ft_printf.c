@@ -6,7 +6,7 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:38:57 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/08 12:50:40 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:49:55 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	conversion_specifiers(char word, va_list arguments);
 
-int	ft_printf(char *str, ...)
+int	ft_printf(char const *str, ...)
 {
 	int		i;
 	int		sum;
