@@ -1,6 +1,6 @@
 NAME = libftprintf.a
 
-SRC = ft_print.c char_str_handler.c number_handler.c
+SRC = ft_printf.c char_str_handler.c number_handler.c
 OBJ = $(SRC:.c=.o)
 
 CC = cc
@@ -8,14 +8,14 @@ CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ) ft_printf.h
+	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c ft_printf.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(OBJ_BONUS)
+	rm -f $(OBJ)
 	@echo "Object files cleaned."
 
 fclean: clean
