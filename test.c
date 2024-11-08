@@ -176,16 +176,29 @@ int	main(void)
 
 	//6 - Prueba con direcciones de memoria
 	printf(YEL "---6: Prueba con direcciones de memoria---\n" RESET);
-	printf(MAG "normal" RESET "\n");
+	printf(MAG "Direccion normal" RESET "\n");
 	int pato = 2;
 	p_result = printf("%p\n", &pato);
 	u_result = ft_printf("%p\n", &pato);
 	printf(CYN "Printf: %d" RESET "\n" GRN "ft_printf: %d" RESET "\n", p_result, u_result);
 	printf("\n");
 
-	printf(MAG "normal" RESET "\n");
+	printf(MAG "Direccion NULL" RESET "\n");
 	p_result = printf("%p\n", NULL);
 	u_result = ft_printf("%p\n", NULL);
 	printf(CYN "Printf: %d" RESET "\n" GRN "ft_printf: %d" RESET "\n", p_result, u_result);
 	printf("\n");
+
+	//7 - Cosas varias
+	printf(YEL "---7: Cosas varias---\n" RESET);
+	char a = 'a';
+	char *word = "palabra";
+	int num = 1;
+	p_result = printf("La %s: %c es la numero %d del abecedario\n", word, a, num);
+	u_result = ft_printf("La %s: %c es la numero %d del abecedario\n", word, a, num);
+	printf(CYN "Printf: %d" RESET "\n" GRN "ft_printf: %d" RESET "\n", p_result, u_result);
+
+	int a2 = 123456;	
+	p_result = printf("El numero: %x/%X tiene direccion en:%p\n", a2, a2, &a2);
+	u_result = ft_printf("El numero: %x/%X tiene direccion en:%p\n", a2, a2, &a2);
 }
