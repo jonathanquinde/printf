@@ -6,7 +6,7 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:43:03 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/08 12:24:57 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:34:37 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 int	put_char(char c);
 int	put_str(char *str);
-int	put_nbr_base(unsigned int num, char *base, size_t len);
+int	put_nbr_base(unsigned long num, char *base, size_t len);
 int	put_pointer_adress(void *ptr);
 int	handle_negative(int num);
 #endif
