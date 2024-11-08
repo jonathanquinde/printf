@@ -6,11 +6,11 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:38:38 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/07 17:41:04 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:23:44 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	put_char(char c)
 {

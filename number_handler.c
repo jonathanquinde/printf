@@ -6,11 +6,11 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:02:15 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/07 18:01:00 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:23:20 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	put_nbr_base(unsigned long num, char *base, size_t len)
 {
@@ -33,7 +33,7 @@ int	put_pointer_adress(void *ptr)
 		return (write(1, "(nil)", 5));
 	sum = 0;
 	sum += write(1, "0x", 2);
-	sum += put_nbr_base((unsigned int) ptr, BASE_HEX_MIN, 16);
+	sum += put_nbr_base((unsigned long) ptr, BASE_HEX_MIN, 16);
 	return (sum);
 }
 

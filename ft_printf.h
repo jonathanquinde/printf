@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:43:03 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/07 17:48:09 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:24:57 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdio.h>

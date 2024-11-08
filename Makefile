@@ -1,4 +1,4 @@
-NAME = libftprint.a
+NAME = libftprintf.a
 
 SRC = ft_print.c char_str_handler.c number_handler.c
 OBJ = $(SRC:.c=.o)
@@ -11,7 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c printf.h
+%.o: %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
