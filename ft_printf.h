@@ -6,7 +6,7 @@
 /*   By: jquinde- < jquinde-@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:43:03 by jquinde-          #+#    #+#             */
-/*   Updated: 2024/11/08 12:34:37 by jquinde-         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:59:52 by jquinde-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 # include <unistd.h>
 # include <stdarg.h>
-# include <stdio.h>
 # define BASE_HEX_MIN "0123456789abcdef"
 # define BASE_HEX_MAY "0123456789ABCDEF"
 # define BASE_DEC "0123456789"
