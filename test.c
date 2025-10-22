@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "ft_printf.h"
 #define RED   "\x1B[31m"
 #define GRN   "\x1B[32m"
@@ -186,6 +185,13 @@ int	main(void)
 	printf(MAG "Direccion NULL" RESET "\n");
 	p_result = printf("%p\n", NULL);
 	u_result = ft_printf("%p\n", NULL);
+	printf(CYN "Printf: %d" RESET "\n" GRN "ft_printf: %d" RESET "\n", p_result, u_result);
+	printf("\n");
+
+	printf(MAG "Direccion MAX" RESET "\n");
+	void *max_ptr = (void *) 18446744073709551615u;
+	p_result = printf("%p\n", max_ptr);
+	u_result = ft_printf("%p\n", max_ptr);
 	printf(CYN "Printf: %d" RESET "\n" GRN "ft_printf: %d" RESET "\n", p_result, u_result);
 	printf("\n");
 

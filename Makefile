@@ -2,6 +2,7 @@ NAME = libftprintf.a
 
 SRC = ft_printf.c char_str_handler.c number_handler.c
 OBJ = $(SRC:.c=.o)
+HEADER = ft_printf.h
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror 
@@ -11,7 +12,7 @@ all: $(NAME)
 $(NAME): $(OBJ) ft_printf.h
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
+%.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
